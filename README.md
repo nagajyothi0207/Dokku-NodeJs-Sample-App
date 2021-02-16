@@ -1,5 +1,5 @@
 # Dokku-NodeJs-Sample-App
-Deployment of a Node.js project on AWS EC2 instance
+## Deployment of a Node.js project on AWS EC2 instance
 
 ### Bootstrap the node first
 ### for debian systems, installs dokku via apt-get
@@ -8,7 +8,7 @@ Deployment of a Node.js project on AWS EC2 instance
 
   sudo DOKKU_TAG=v0.23.5 bash bootstrap.sh
 ```
- ## go to your server's IP and follow the web installer
+ ### go to your server's IP and follow the web installer
 
 ### then enable the SSH key-based authentication
 vim ~/.ssh/config
@@ -35,7 +35,7 @@ dokku apps:create nodejs-sample-app
  #### @dokku - is the server name - where you've configured in ssh/config
  #### nodejs-sample-ap - is your dokku application name 
  
-## Deploy the app
+### Deploy the app
  ```
  git add .
  git commit -am "adding nodejs application to dokku"
