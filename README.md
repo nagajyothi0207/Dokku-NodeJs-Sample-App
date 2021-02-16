@@ -43,8 +43,6 @@ dokku apps:create nodejs-sample-app
  ```
  ``
 =====> Application deployed:
-       http://nodejs-sample-app.cloudreinforce.com
-
 To dokku:nodejs-sample-app-v1
    8f923f2..e344afb  master -> master
    
