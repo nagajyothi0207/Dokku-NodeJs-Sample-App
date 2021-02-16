@@ -34,3 +34,22 @@ dokku apps:create nodejs-sample-app
  #### dokku is the linux user for application life cycle maintenence
  #### @dokku - is the server name - where you've configured in ssh/config
  #### nodejs-sample-ap - is your dokku application name 
+ 
+## Deploy the app
+ ```
+ git add .
+ git commit -am "adding nodejs application to dokku"
+ git push dokku master
+ ```
+ 
+=====> Application deployed:
+       http://nodejs-sample-app.cloudreinforce.com
+
+To dokku:nodejs-sample-app-v1
+   8f923f2..e344afb  master -> master
+   
+
+### Map the DNS record to point to your EC2 instance/ALB.
+
+test the app:
+@https://hello-world.cloudreinforce.com/
